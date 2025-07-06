@@ -1,0 +1,222 @@
+
+html{
+  font-family: sans-serif;
+}
+
+.dropbtn {
+  font-size: 16px;
+  background: #e9ecef !important;
+  cursor: pointer;
+  min-width: 160px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 
+    0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none !important;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+.dropdown-content img {
+  width: 30px;
+  margin-right: 7px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.trans-fees tr:last-child { font-weight:bold; } /*background: #ecedee;color: red;*/
+.trans-fees td:first-child { width: 60%; } /*background: #ecedee;color: red;*/
+#about {float:left; width:49%;}
+#sfees, #bfees, #pie-graph, #price-change {float:right; width:49%;}
+.card { margin-bottom: 25px; }
+
+
+.token-graph-button{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+  padding: 0px 10px;
+}
+.token-graph-button span{
+  text-align: center;
+  white-space: nowrap;
+}
+/* .token-graph-button:not(:first-child){
+  border-left: 1px solid #ccc;
+} */
+.token-graph-button:hover{
+  background-color: rgba(231, 233, 234, 0.6);
+}
+
+.token-graph-button.--active{
+  /* background: crimson; */
+  background: seagreen;
+  color: white;
+}
+.token-graph-button.--active:hover{
+  /* background: darkred; */
+  background: darkslategray;
+}
+
+
+#graph-rod{
+  width: 1px; 
+  height: 100%; 
+  position: absolute; 
+  display: none; 
+  top: 0; background-color: dodgerblue; 
+  pointer-events: none
+}
+
+.graph-tag {
+    background: crimson;
+    color: #fff;
+    border-radius: 3px;
+    padding: 0px 4px;
+}
+
+.empty-graph{
+  height: 292px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  /* color: orangered; */
+  color: #ccc;
+}
+.percent-diff{
+  /* font-size: 12px; */
+  flex: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-menu-wrapper{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+  
+  overflow: -moz-scrollbars-none;
+  overflow-x: scroll;
+}
+
+.top-menu-wrapper::-webkit-scrollbar { 
+  width: 0 !important 
+}
+
+
+.graph-top-middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.token-name-tag{
+  font-weight: bold;
+  background: #ececec;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+
+.loader_circle{
+  border: 10px solid orange;
+  border-bottom: 10px solid #fff;
+  border-top: 10px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+.custom_tooltip-text {
+  border-radius: 2px;
+  padding: 5px 9px;
+  font-size: 12px;
+  color: #fff;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 150px;
+  /* background-color: rgba(28, 28, 28, 0.9); */
+  background-color: #616161;
+}
+
+
+.tooltip_position {
+  display: none;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  z-index: 10000000000000000;
+  top: 100%;
+  outline: none !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.tooltip_position div {
+  white-space: nowrap;
+  background: #616161;
+  padding: 2px;
+  border-radius: 2px;
+  color: #fff;
+}
