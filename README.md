@@ -1,6 +1,6 @@
 # Blockchain Token Price Graph (2021)
 
-This code is from my 2021 work on a token investment website where i wrote a price graph generator code that took data from the local price entries that we used to keep track of insid our db, and generate multiple versions of SVG graphs with a cronjob multiple times a day and save them in a tokens table to display interactive token price graphs with different time filters.
+This code is from my 2021 work on a token investment website where i wrote a price graph generator code that took data from the local price entries that we used to keep track of inside our db, and generate multiple versions of SVG graphs with a cronjob multiple times a day and save them in a tokens table to display interactive token price graphs with different time filters.
 
 ## Warning
 This code is only useful in that very specific case when you log token prices in your own database
